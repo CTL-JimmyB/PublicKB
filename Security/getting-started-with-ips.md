@@ -13,7 +13,12 @@ This Blueprint is for the actual installation and activation of the IPS service 
 
 ### Prerequisites
 * A CenturyLink Cloud Account
-* Managed or Unmanaged Operating System Services on the Virtual Machine
+* One of the Supported Operating Systems listed below on the Virtual Machine
+* Add the following Firewall Rules to allow agent download, activation and management:
+  Installing Virtual Machine -> dsm.client-security.ctl.io 443/tcp    
+  Installing Virtual Machine -> activate.dsm.client-security.ctl.io 443/tcp
+  Installing Virtual Machine -> relay.dsm.client-security.ctl.io 443/tcp
+
 
 ### Supported Managed Operating Systems
 * Red Hat Enterprise Linux 5 (64-bit only)
